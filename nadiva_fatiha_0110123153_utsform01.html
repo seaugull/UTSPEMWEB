@@ -24,13 +24,19 @@
         width: 25%;
         height: 30px;
     }
-    button {
+    /* button {
       width: 80px;
       padding: 5px;
       background-color: antiquewhite;
       color: black;
       border: 2px;
       cursor: pointer;
+    } */
+    .daftar{
+        background-color: blue;
+    }
+    .batal{
+        background-color: red;
     }
 </style>
 
@@ -41,10 +47,10 @@
             Nama Perusahaan / Organisasi : <input type="text" name="Nama Perusahaan / Organisasi">
             <br>
             Bidang Usaha :
-            <select>
-                <option>Perbankan</option>
-                <option>Administrasi</option>
-                <option>Customer Service</option>
+            <select name="Bidang Usaha" id="Bidang Usaha">
+                <option value="Perbankan">Perbankan</option>
+                <option value="Administrasi">Administrasi</option>
+                <option value="Customer Service">Customer Service</option>
             </select>
             <br>
             <br>
@@ -58,8 +64,8 @@
             <br>
             Alamat Web : <input type="url" name="Alamat Web" placeholder="http://">
             <br>
-            <button type="submit">Daftar</button>
-            <button type="reset">Batal</button>
+            <button type="submit" class="daftar">Daftar</button>
+            <button type="reset" class="batal">Batal</button>
         </fieldset>
     </form>
 </body>
